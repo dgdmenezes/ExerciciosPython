@@ -7,3 +7,13 @@
 # d. o salário líquido.
 # e. calcule os descontos e o salário líquido, conforme a tabela abaixo:
 
+salarioBruto = float(input("Digite o seu salário Bruto: "))
+
+descontoIRPF = salarioBruto*0.11
+descontoINSS = salarioBruto*0.08
+descontoSindicato = salarioBruto*0.05
+
+salarioLiquido = salarioBruto -descontoIRPF -descontoINSS -descontoSindicato
+
+print(f"{salarioBruto} desconto IRPF {descontoIRPF} + desconto INSS {descontoINSS} + desconto do Sindicato {descontoSindicato} gera um salario líquido de {salarioLiquido}")
+
